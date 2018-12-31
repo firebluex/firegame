@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="25" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="36">
+ <tileset firstgid="1" source="scifi_platformTiles_32x32.tsx"/>
+ <imagelayer id="2" name="wallpaper">
+  <image source="../img/gray_bkg.png" trans="ff00ff" width="782" height="440"/>
+ </imagelayer>
+ <layer id="1" name="Background" width="25" height="19">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvwAAAMAAAADBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOIAAADjAAAA5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADTAAAA1AAAANUAAADWAAAA1wAAANgAAADZAAAA2gAAANsAAADcAAAAAAAAAAAAAAAFAQAABgEAAAcBAAAAAAAAAAAAAAAAAADTAAAA1AAAANUAAADWAAAA1wAAANgAAADZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADTAAAA1AAAANUAAADWAAAA1wAAANgAAADZAAAA2AAAANMAAADUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANUAAADWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANMAAADUAAAA1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADUAAAA1QAAANYAAADXAAAA2AAAAAAAAAAAAAAAAAAAANMAAADUAAAA1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACSAAAAkwAAAJIAAACTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtQAAALYAAAC1AAAAtgAAAI8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0wAAANQAAADVAAAA1gAAANcAAADYAAAA2QAAANMAAACyAAAAswAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0wAAANQAAADVAAAA1gAAANcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0wAAANQAAADVAAAA1gAAANcAAADYAAAA2QAAANwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANMAAADUAAAA1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACNAAAAjgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI0AAACOAAAAsAAAALEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAsQAAANMAAADUAAAA1QAAANYAAADXAAAA2AAAANkAAADaAAAA2wAAANkAAADZAAAA2QAAANkAAADZAAAA2QAAANkAAADZAAAA2QAAANkAAADZAAAA2QAAANkAAADZAAAA2QAAANkAAAD2AAAA9wAAAPgAAAD5AAAA+gAAAPsAAAD8AAAA/QAAAP4AAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAAApQEAAKYBAACnAQAAqAEAAKkBAACqAQAAqwEAAKwBAACtAQAAqgEAAKsBAACqAQAAqwEAAKoBAACrAQAAqgEAAKsBAACqAQAAqwEAAKoBAACrAQAAqgEAAKsBAACqAQAAqwEAAA==
+  </data>
+ </layer>
+ <objectgroup id="3" name="Entities">
+  <object id="1" name="PrincessEntity" type="princess" x="386" y="447" width="48" height="62">
+   <properties>
+    <property name="image" value="princess"/>
+   </properties>
+  </object>
+  <object id="2" name="DoorEntity" type="door" x="2" y="449" width="62" height="61"/>
+  <object id="3" name="DoorEntity" type="door" x="735" y="448" width="65" height="63"/>
+  <object id="4" name="mainPlayer" x="183" y="439" width="32" height="64">
+   <properties>
+    <property name="framewidth" type="int" value="58"/>
+    <property name="image" value="protoman_run_right"/>
+   </properties>
+  </object>
+  <object id="9" name="EnemyEntity" x="34" y="2" width="37" height="59">
+   <properties>
+    <property name="directionright" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="10" name="EnemyEntity" x="722" y="6" width="41" height="57">
+   <properties>
+    <property name="directionright" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="11" name="CoinEntity" x="398" y="115" width="71" height="39" visible="0"/>
+  <object id="30" type="side" x="479" y="416" width="1" height="5"/>
+  <object id="31" name="CoinEntity" x="620" y="443" width="44" height="62"/>
+  <object id="32" name="CoinEntity" x="381" y="122" width="101" height="29"/>
+  <object id="33" name="CoinEntity" x="674" y="197" width="50" height="50"/>
+  <object id="34" name="CoinEntity" x="71" y="459" width="45" height="46"/>
+  <object id="35" name="CoinEntity" x="500" y="363" width="35" height="47"/>
+ </objectgroup>
+ <objectgroup id="4" name="collision">
+  <object id="5" type="platform" x="-29" y="510" width="868" height="98"/>
+  <object id="6" type="side" x="-37" y="-1" width="37" height="523"/>
+  <object id="7" type="side" x="797" y="1" width="46" height="518"/>
+  <object id="8" type="platform" x="3" y="386" width="254" height="5"/>
+  <object id="12" type="platform" x="98" y="256" width="157" height="5"/>
+  <object id="13" type="platform" x="322" y="351" width="157" height="6"/>
+  <object id="14" type="platform" x="482" y="415" width="93" height="6"/>
+  <object id="15" type="platform" x="545" y="318" width="252" height="5"/>
+  <object id="16" type="platform" x="673" y="256" width="123" height="61"/>
+  <object id="17" type="platform" x="737" y="161" width="59" height="4"/>
+  <object id="18" type="platform" x="512" y="193" width="93" height="5"/>
+  <object id="19" type="platform" x="352" y="256" width="93" height="4"/>
+  <object id="20" type="platform" x="192" y="159" width="317" height="4"/>
+  <object id="21" type="platform" x="578" y="63" width="219" height="5"/>
+  <object id="22" type="platform" x="1" y="64" width="317" height="7"/>
+  <object id="23" type="side" x="508" y="161" width="6" height="31"/>
+  <object id="24" type="side" x="669" y="262" width="4" height="55"/>
+  <object id="25" name="EnemyEntity" x="121" y="142" width="43" height="60">
+   <properties>
+    <property name="directionright" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="26" x="2" y="320" width="32" height="63"/>
+  <object id="27" x="34" y="355" width="29" height="29"/>
+  <object id="28" type="side" x="31" y="339" width="5" height="47"/>
+  <object id="29" type="side" x="62" y="373" width="4" height="12"/>
+ </objectgroup>
+</map>
